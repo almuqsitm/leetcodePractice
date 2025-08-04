@@ -1,14 +1,13 @@
-class Solution:
-    def findDisappearedNumbers(nums):
-        my_set = set(nums)
+def findDisappearedNumbers(nums):
+    my_set = set(nums)
 
-        res = []
+    res = []
 
-        for i in range(1, len(nums) + 1):
-            if i not in my_set:
-                res.append(i)
+    for i in range(1, len(nums) + 1):
+        if i not in my_set:
+            res.append(i)
 
-        return res
+    return res
 
 
 # My Idea
